@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form | Check Your Emotions!</title>
+    <style>
+        body {
+            background-image: url(wallpaperflare.com_wallpaper.jpg);
+        }
+        h2 {
+            color: whitesmoke;
+        }
+        .container {
+            border: 1px solid darkgreen;
+            border-radius: 5px;
+            margin: 30px 100px;
+            padding: 10px;
+            background-color: azure;
+        }
+        .rows {
+  position: static;
+  display: block;
+}
+.labels {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px;
+}
+.input-fields {
+  height: 20px;
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 4px;
+}
+.btn_submit {
+    font-size: 16px;
+    background-color: cornflowerblue;
+    color: white;
+    border: 0px solid;
+    border-radius: 5px;
+    height: 40px;
+    width: 80px;
+    margin: 10px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h2 align ="center">Check your emotions</h2>
+    </header>
+    <main class="container">
+        <form action="">
+            <h3 align ="center">Mention something what you think everyday in your life</h3>
+            <div class="rows">
+                <label class="labels" for="name" id="name-label">Name</label>
+                <input type="text" id="name" class="input-fields" placeholder="Enter your name" required>
+            </div>
+            <div class="rows">
+                <label for="email" class="labels">Email</label>
+                <input type="text" id="email" class="input-fields" placeholder="Enter your email">
+            </div>
+            <div class="rows">
+                <label for="env" class="labels">Out of 10, how good today's environment is?</label>
+                <input type="number" id="env" class="input-fields" placeholder="Between 1 and 10" min="1" max="10">
+            </div>
+            <div class="rows">
+                <label for="options" class="labels">Where do you now?</label>
+                <select class="input-fields" id="options" style="height: 30px; width: 292px;">
+                    <option>Office</option>
+                    <option>Home</option>
+                    <option>Garden</option>
+                    <option>Park</option>
+                    <option>Club</option>
+                </select>
+            </div>
+            <div class="rows">
+                <fieldset style="margin: 1% 45% 2% 35%; width: 375px;">
+                    <legend>Which time of a day do you like most?</legend>
+                    
+                    <p><label for="Morning" class=""><input type="radio" class="" id="Morning" name="time">Morning</label></p>
+                    
+                    <p></p><label for="Afternoon" class=""><input type="radio" class="" id="Afternoon" name="time">Afternoon</label></p>
+                    
+                    <p></p><label for="Evening" class=""><input type="radio" class="" id="Evening" name="time">Evening</label></p>
+                </fieldset>
+                
+                
+            </div>
+            <div class="rows">
+                <fieldset style="margin: 1% 45% 2% 35%; width: 375px;">
+                    <legend>Which reactions do you experience most of the time?</legend>
+                    
+                    <p><label for="Loved" class=""><input type="checkbox" class="" id="Loved">Loved</label></p>
+                    
+                    <p></p><label for="Excited" class=""><input type="checkbox" class="" id="Excited">Excited</label></p>
+                    
+                    <p></p><label for="Humbled" class=""><input type="checkbox" class="" id="Humbled">Humbled</label></p>
+
+                    <p></p><label for="Fear" class=""><input type="checkbox" class="" id="Fear">Fear</label></p>
+
+                    <p></p><label for="Enthusiastic" class=""><input type="checkbox" class="" id="Enthusiastic">Enthusiastic</label></p>
+                </fieldset> 
+            </div>
+            <div class="rows"><label for="tArea
+                " class="labels">Please describe your personal experience in your professional life</label>
+                <textarea name="" id="tArea" cols="30" rows="30" class="input-fields" style="height: 50px;resize:vertical;font-family: Open Sans Condensed;">
+                </textarea>
+            </div>
+            <div align="center" >
+                <button class="btn_submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <footer align ="center"> 
+            <p style="color: whitesmoke;">Created by <a href = "https://mostafa.com/" style="text-decoration: none; color: seagreen" >Mostafa</a></p> 
+         </footer> 
+    </footer>
+</body>
+</html>
